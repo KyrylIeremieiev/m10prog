@@ -25,8 +25,13 @@ class Car{
     public function passangerChange(int $newPassangers){
         $this->passangers = $newPassangers;
         $this->availableSeats = $this->seats - $this->passangers;
-
-        echo 'New Passanger Amount: ' . $this->passangers . ". Amount of seats left: " . $this->availableSeats; 
+        if($this->availableSeats < 0){
+            echo 'Help! The Car is Overflowing';
+        }
+        else{
+            echo 'New Passanger Amount: ' . $this->passangers . ". Amount of seats left: " . $this->availableSeats; 
+        }
+        
     }
 }
 

@@ -9,7 +9,7 @@ class Car{
     private $speed = 50;
     private $availableSeats = 6;
 
-    public function modify(string $newColor, int $newSeats){
+    public function modify(string $newColor = 'blue', int $newSeats = 6){
         $this->color = $newColor;
         $this->seats = $newSeats;
 
@@ -30,6 +30,14 @@ class Car{
     }
 }
 
+class BigCar extends Car{
+    public function init(){
+        parent::modify('blue', 10);
+    }
+}
+
 $car = new Car();
+$bigCar = new BigCar();
+$bigCar->init();
 
 $car->passangerChange(3);

@@ -36,13 +36,11 @@ class Car{
 }
 
 class BigCar extends Car{
-    public function init(){
+    public function __construct(){
         parent::modify('blue', 10);
     }
 }
 
 $car = new Car();
-$bigCar = new BigCar();
-$bigCar->init();
-
-$car->passangerChange(3);
+$car->modify('blue', 3);
+$car->passangerChange(5);

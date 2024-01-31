@@ -8,10 +8,19 @@ class ProjectHandlerController extends Controller
 {
     public function handleFormSubmission(Request $request)
     {
+        $file = $request->file('file');
+        if(!empty($file)){
+            $path = $file->store("img", "public");
+        }
+        
         $operation = $request->input('operation');
         $title = $request->input('title');
+        $num = $request->input('num');
         $disc = $request->input('disc');
         $image = $request->input('image');
+        if(!empty($file)){
+            $image = $path;
+        }
 
         switch ($operation) {
             case 'create':

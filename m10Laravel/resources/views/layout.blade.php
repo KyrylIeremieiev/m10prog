@@ -12,8 +12,8 @@
         <div class="flex items-center text-red-500 text-lg space-x-6">
             <a class="hover:underline" href="/">Home</a>
             <a class="hover:underline" href="/#projects">Projecten</a>
-            <a class="hover:underline" href="#">Over Ons</a>
             <a class="hover:underline" href="#contact">Contact</a>
+            <a class="hover:underline" href="/login">Login</a>
         </div>
     </header>
     <main class="p-8 flex">

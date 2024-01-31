@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container mx-auto mt-8">
-        <form method="POST" action="http://127.0.0.1:8000/meta/projectHandler" class="max-w-md mx-auto p-6 bg-white border rounded shadow">
+        <form method="POST" action="http://127.0.0.1:8000/meta/projectHandler" enctype="multipart/form-data" class="max-w-md mx-auto p-6 bg-white border rounded shadow">
             @csrf
 
             <div class="mb-4">
@@ -13,6 +13,11 @@
                     <option value="update">Update</option>
                     <option value="delete">Delete</option>
                 </select>
+            </div>
+
+            <div class="mb-4">
+                <label for="num" class="block text-gray-700 text-sm font-bold mb-2">Num</label>
+                <input type="text" id="num" name="num" class="w-full p-2 border rounded">
             </div>
 
             <div class="mb-4">
@@ -28,6 +33,10 @@
             <div class="mb-4">
                 <label for="image" class="block text-gray-700 text-sm font-bold mb-2">Image URL</label>
                 <input type="text" id="image" name="image" class="w-full p-2 border rounded">
+            </div>
+            <div class="mb-4">
+                <label for="file" class="block text-gray-700 text-sm font-bold mb-2">File</label>
+                <input type="file" id="file" name="file" class="w-full p-2 border rounded">
             </div>
 
             <div class="mb-4">

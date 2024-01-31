@@ -1,0 +1,126 @@
+/* Reset Styles */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* CSS Reset */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl,
+figure,
+blockquote,
+fieldset,
+legend {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set core body defaults */
+body {
+  line-height: 1;
+}
+
+/* Remove list styles on ul, ol elements */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Make images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Reset hyperlink styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remove border on table */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* End of CSS Reset */
+
+/* Header Styles */
+
+.header {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.header__logo {
+    width: 10rem; /* Adjust the width as needed */
+}
+
+.header__linkWrap {
+    display: flex;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    gap: 1.5rem;
+    color: red; /* Adjust the color as needed */
+}
+
+figure.w-40rem {
+    width: 40rem;
+  }
+
+
+figure.h-40rem {
+    height: 40rem;
+  }
+
+.gap-2rem{
+    gap: 2rem;
+
+}
+
+.radius-1{
+    border-radius: 0.5rem;
+}
+
+.w-100vw{
+  width: 100vw;
+}
+
+.h-20rem{
+  height: 20rem;
+}
+
+.b-footer{
+  background: #3D3B40;
+  color: white;
+}
+
+
+
+/* Main Styles */
+
+/* Add your main styles here */
+
+/* End of Tailwind CSS */
+
